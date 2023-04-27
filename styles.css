@@ -1,0 +1,36 @@
+:root {
+    --color-darkorange: #E05304;
+    --color-orange: #F55800;
+    --color-lightsalmon: #FFF5E1;
+    --color-white: #FFFFFF;
+    --color-whitesmoke: #F4F1F0;
+    --color-black: #1C1A19;
+}
+
+@media screen and (min-width: 375px) {
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    button {
+        border: 1px solid transparent;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
