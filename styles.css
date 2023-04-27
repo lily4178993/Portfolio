@@ -7,7 +7,7 @@
     --color-black-1: #1C1A19;
     --color-black-2: #3C3A39;
 }
-
+/*========= Minimum mobile screen size =========*/
 @media screen and (min-width: 375px) {
     * {
         margin: 0;
@@ -52,7 +52,7 @@
         font-weight: 700;
         line-height: 24px;
     }
-
+    /*----- naviguation menu -----*/
     .menu-box {
         background-color: var(--color-black-2);
     }
@@ -121,8 +121,59 @@
         padding: 0 0 0.3em 0.5em;
         border-bottom: 1px solid var(--color-whitesmoke);
     }
-}
+    /*======== HEADLINE SECTION =========*/
+    .headline {
+        height: 100vh;
+        padding: 10em 1em;
+        background: var(--color-black-1) url(images/Illustration-header-2.png) 100% 110% no-repeat;
+    }
 
+    .headline-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .headline-content h1{
+        font-family: 'Crete Round', serif;
+        font-size: 3rem;
+        font-weight: 400;
+        color: var(--color-darkorange);
+    }
+
+    .headline-content p {
+        color: var(--color-white);
+    }
+
+    .headline-content p:nth-of-type(1) {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--color-lightsalmon);
+    }
+    /*----- social icons -----*/
+    .socials {
+        margin: 1em;
+    }
+
+    .socials ul {
+        display: flex;
+        gap: 1em;
+    }
+
+    .socials li {
+        transition: 300ms ease-in-out;
+        cursor: pointer;
+    }
+
+    .socials li:active,
+    .socials li:focus,
+    .socials li:hover {
+        transform: translateY(0.2em);
+        border-bottom: 1px solid var(--color-whitesmoke);
+        filter: sepia(100%);
+    }
+}
+/*========= Minimum desktop screen size =========*/
 @media screen and (min-width: 768px) {
 
 }
