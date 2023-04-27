@@ -18,19 +18,11 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [Live Demo](#live-demo)
-- [Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [Author](#author)
 - [Future Features](#future-features)
 - [Contributing](#contributing)
 - [Show your support](#support)
 - [Acknowledgements](#acknowledgements)
-- [FAQ (OPTIONAL)](#faq)
 - [License](#license)
 
     <br/>
@@ -64,13 +56,6 @@ This portfolio is build with:
 * <b>Linters</b> for coding convention and coding formating
 <br/><br/>
 
-<!-- Features -->
-
-### <b>Key Features</b> <a name="key-features"></a>
-<hr />
-
-> Coming soon...
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br/><br/>
 
@@ -79,47 +64,10 @@ This portfolio is build with:
 ## <b>Live Demo 🚀</b> <a name="live-demo"></a>
 <hr />
 
-> Unfortunatly, there is not live demonstration avalaible right now 😭
+You can see the live demonstration of this portfolio [here](https://lily4178993.github.io/Portfolio/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br/><br/><br/><br/>
-<!-- GETTING STARTED -->
-
-## <b>Getting Started 💻</b><a name="getting-started"></a>
-<hr />
-
-> Coming soon...
-
-<br/><br/>
-
-### Prerequisites
-
-> Coming soon...
-
-### Setup
-
-> Coming soon...
-
-### Install
-
-> Coming soon...
-
-### Usage
-
-> Coming soon...
-
-### Run tests
-
-> Coming soon...
-
-<br/><br/>
-
-### <b>Deployment</b>
-
-> Coming soon...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<br/><br/>
 <!-- AUTHORS -->
 
 ## <b>Author 👤</b><a name="authors"></a>
@@ -150,6 +98,7 @@ I also plan to **deploy the portfolio**
 
 ## <b>Contributing 🤝 </b><a name="contributing"></a>
 <hr /><br/>
+
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](https://github.com/lily4178993/Portfolio/issues).
 
