@@ -48,6 +48,7 @@
     padding: 0.7em 0.8em;
     background-color: var(--color-black-2);
     color: var(--color-white);
+    z-index: 100;
   }
 
   .logo {
@@ -178,19 +179,21 @@
     border-bottom: 1px solid var(--color-whitesmoke);
     filter: sepia(100%);
   }
-  /*----- all sections -----*/
+
+  /* ----- all sections ----- */
   section {
     padding-top: 7em;
   }
 
-  section .separator-line{
+  section .separator-line {
     width: 80%;
     height: 1px;
     background-color: red;
     margin: 4em auto;
   }
+
   /* ======== RECENT WORKS SECTION ========= */
-  .section-works-title h2{
+  .section-works-title h2 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 500;
@@ -203,38 +206,43 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr repeat(auto, 1fr);
   }
-  /*----- work card box -----*/
+
+  /* ----- work card box ----- */
   .work-box {
     width: 90vw;
     min-width: 320px;
+    height: auto;
     border: 1px solid transparent;
     margin: 0 auto;
     margin-bottom: 1em;
+    position: relative;
   }
-  
-  .work-img-box {
-    width: 100%;
-    height: 250px;
-    background-color: red;
-  }
-  
-  .work-img-box img {
+
+  .work-box::before {
+    position: absolute;
+    content: '';
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background: rgba(71, 71, 71, 0.211) url(images/pro-img-2.png) center/cover no-repeat;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 500ms ease-in-out;
   }
-  
-  .work-content {
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 1em;
-    padding: 1em 0.2em;
+
+  .work-box:hover::before {
+    opacity: 1;
   }
 
   .work-title {
     font-size: 1.5rem;
+  }
+
+  .work-title,
+  .work-description,
+  .work-languages-list {
+    transition: margin 500ms ease-in-out;
   }
 
   .work-description {
@@ -251,16 +259,62 @@
     padding: 0.2em;
     border: 1px solid var(--color-whitesmoke);
     backdrop-filter: 10px;
+    transition: background 300ms ease-in-out;
   }
 
   .see-work {
     padding: 0.5em 1em;
+    margin-bottom: -1em;
     background-color: var(--color-orange);
     color: var(--color-white);
     border: 1px solid transparent;
     display: block;
     width: 40%;
     text-align: center;
+    transition: width 300ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .work-box:hover .work-title,
+  .work-box:hover .work-description,
+  .work-box:hover .see-work,
+  .work-box:hover .work-language {
+    z-index: 2;
+  }
+
+  .work-box:hover .work-title,
+  .work-box:hover .work-description,
+  .work-box:hover .work-languages-list {
+    color: var(--color-white);
+    margin: 0 1em;
+  }
+
+  .work-box:hover .work-language {
+    background-color: rgb(148, 147, 147);
+  }
+
+  .work-box:hover .see-work {
+    width: 100%;
+  }
+
+  .work-img-box {
+    width: 100%;
+    height: 250px;
+    background-color: red;
+  }
+
+  .work-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .work-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    padding: 1em 0;
   }
 }
 
