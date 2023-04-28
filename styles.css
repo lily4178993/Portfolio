@@ -255,9 +255,62 @@
     position: relative;
   }
 
+  .work-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    padding: 1em 0;
+  }
+
+  .work-title {
+    font-size: 1.5rem;
+  }
+
+  .work-title,
+  .work-description,
+  .work-languages-list {
+    transition: margin 500ms ease-in-out;
+  }
+
+  .work-description {
+    font-size: 1.1rem;
+  }
+
+  .work-languages-list {
+    display: flex;
+    gap: 1em;
+  }
+
+  .see-work {
+    margin-bottom: -1em;
+  }
+
+  .work-language {
+    background-color: var(--color-whitesmoke);
+    padding: 0.2em;
+    border: 1px solid var(--color-whitesmoke);
+    backdrop-filter: 10px;
+    transition: background 300ms ease-in-out;
+  }
+
+  :not([class="w-disable"]) .work-title,
+  :not([class="w-disable"]) .work-description,
+  :not([class="w-disable"]) .see-work,
+  :not([class="w-disable"]) .work-language {
+    z-index: 2;
+  }
+
+  :not([class="w-disable"]) .work-title,
+  :not([class="w-disable"]) .work-description,
+  :not([class="w-disable"]) .work-languages-list {
+    color: var(--color-white);
+    margin: 0 1em;
+  }
+
   .work-box:nth-of-type(1) .work-title,
   .work-box:nth-of-type(1) .work-description,
-  .work-box:nth-of-type(1) .work-languages-list{
+  .work-box:nth-of-type(1) .work-languages-list {
     color: var(--color-black-1);
   }
 
@@ -296,51 +349,6 @@
     opacity: 1;
   }
 
-  .work-title {
-    font-size: 1.5rem;
-  }
-
-  .work-title,
-  .work-description,
-  .work-languages-list {
-    transition: margin 500ms ease-in-out;
-  }
-
-  .work-description {
-    font-size: 1.1rem;
-  }
-
-  .work-languages-list {
-    display: flex;
-    gap: 1em;
-  }
-
-  .work-language {
-    background-color: var(--color-whitesmoke);
-    padding: 0.2em;
-    border: 1px solid var(--color-whitesmoke);
-    backdrop-filter: 10px;
-    transition: background 300ms ease-in-out;
-  }
-
-  .see-work {
-    margin-bottom: -1em;
-  }
-
-  :not([class="w-disable"]) .work-title,
-  :not([class="w-disable"]) .work-description,
-  :not([class="w-disable"]) .see-work,
-  :not([class="w-disable"]) .work-language {
-    z-index: 2;
-  }
-
-  :not([class="w-disable"]) .work-title,
-  :not([class="w-disable"]) .work-description,
-  :not([class="w-disable"]) .work-languages-list {
-    color: var(--color-white);
-    margin: 0 1em;
-  }
-
   .w-disable .work-language {
     background-color: rgb(148, 147, 147);
   }
@@ -359,14 +367,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  .work-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 1em;
-    padding: 1em 0;
   }
 
   /* ======== ABOUT SECTION ========= */
