@@ -36,6 +36,36 @@
     border: 1px solid transparent;
   }
 
+  .btn {
+    padding: 0.5em 1em;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    border: 1px solid transparent;
+    display: block;
+    width: 40%;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    color: var(--color-darkorange);
+    background-color: var(--color-lightsalmon);
+    border-color: var(--color-orange);
+  }
+
+  .btn:active {
+    color: var(--color-lightsalmon);
+    background-color: var(--color-darkorange);
+    border-color: var(--color-darkorange);
+  }
+
+  .btn:disabled {
+    color: var(--color-black-2);
+    background-color: var(--color-whitesmoke);
+    border-color: var(--color-whitesmoke);
+  }
+
   /* ======== HEADER ========= */
   .header {
     position: fixed;
@@ -172,6 +202,10 @@
     cursor: pointer;
   }
 
+  .skills-list li {
+    margin: 1em 0;
+  }
+
   .socials li:active,
   .socials li:focus,
   .socials li:hover {
@@ -182,17 +216,20 @@
 
   /* ----- all sections ----- */
   section {
-    padding-top: 7em;
+    padding: 7em 1em;
   }
 
   section .separator-line {
     width: 80%;
     height: 1px;
-    background-color: red;
     margin: 4em auto;
   }
 
   /* ======== RECENT WORKS SECTION ========= */
+  .section-works .separator-line {
+    background-color: var(--color-black-2);
+  }
+
   .section-works-title h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -201,7 +238,7 @@
   }
 
   .works-container {
-    padding: 1em;
+    padding: 1em 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr repeat(auto, 1fr);
@@ -268,34 +305,7 @@
   }
 
   .see-work {
-    padding: 0.5em 1em;
     margin-bottom: -1em;
-    background-color: var(--color-orange);
-    color: var(--color-white);
-    border: 1px solid transparent;
-    display: block;
-    width: 40%;
-    text-align: center;
-    transition: all 500ms ease-in-out;
-    cursor: pointer;
-  }
-
-  .see-work:hover {
-    color: var(--color-darkorange);
-    background-color: var(--color-lightsalmon);
-    border-color: var(--color-orange);
-  }
-
-  .see-work:active {
-    color: var(--color-lightsalmon);
-    background-color: var(--color-darkorange);
-    border-color: var(--color-darkorange);
-  }
-
-  .see-work:disabled {
-    color: var(--color-black-2);
-    background-color: var(--color-whitesmoke);
-    border-color: var(--color-whitesmoke);
   }
 
   .work-box:hover .work-title,
@@ -338,6 +348,62 @@
     justify-content: flex-start;
     gap: 1em;
     padding: 1em 0;
+  }
+
+  /* ======== ABOUT SECTION ========= */
+  .about-section {
+    padding-top: 3em;
+    padding-bottom: 1em;
+    color: var(--color-white);
+    background: var(--color-black-1) url(images/illustration-about-me-mobile.png) 100% 30% no-repeat;
+  }
+
+  .about-section .separator-line {
+    background-color: var(--color-whitesmoke);
+  }
+
+  .about-section-content {
+    height: 80vh;
+  }
+
+  .about-section-title {
+    font-size: 5rem;
+    line-height: 2em;
+    letter-spacing: 5px;
+    font-family: 'Crete Round', serif;
+    font-weight: 500;
+    color: var(--color-orange);
+    text-align: center;
+  }
+
+  .about-description {
+    padding-right: 1em;
+    line-height: 1.5em;
+  }
+
+  .btn-resume {
+    margin-top: 1em;
+  }
+
+  /* ------ skills container ------ */
+
+  /* ----- all sections ----- */
+  .skills-container {
+    padding: 2em 0;
+  }
+
+  .skills-list {
+    text-align: center;
+    margin: 1.5em 0;
+  }
+
+  .skills-list li.bold {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .prog-icon {
+    margin-right: 0.5em;
   }
 }
 
