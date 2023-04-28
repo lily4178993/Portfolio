@@ -37,8 +37,10 @@ This is a portfolio website is designed to show what I'm really capable of as a 
 The screenshot below is a desktop version of the design.
 <div align="center">
 <br/>
-<img src="design/mobile version.jpeg" alt="app screenshot" width="auto"  height="auto" /> <br/><br/>
-<img src="design/menu.jpeg" alt="app screenshot" width="auto"  height="auto" />
+<img src="design/mobile version.jpeg" alt="Home section screenshot" width="auto"  height="auto" /> <br/><br/>
+<img src="design/menu.jpeg" alt="Menu section screenshot" width="auto"  height="auto" />
+<img src="design/my-recent-works-section.jpeg" alt="Work section screenshot" width="auto"  height="auto" />
+<img src="design/about-me-section.jpeg" alt="About section screenshot" width="auto"  height="auto" />
 </div><br/>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br/><br/>
