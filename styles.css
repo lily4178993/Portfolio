@@ -255,6 +255,25 @@
     position: relative;
   }
 
+  .work-box:nth-of-type(1) .work-title,
+  .work-box:nth-of-type(1) .work-description,
+  .work-box:nth-of-type(1) .work-languages-list{
+    color: var(--color-black-1);
+  }
+
+  .w-disable {
+    background: rgba(71, 71, 71, 0.211) url(images/pro-img-2.png) center/cover no-repeat;
+  }
+
+  .w-disable .work-content {
+    height: 500px;
+    justify-content: flex-end;
+  }
+
+  .w-disable .see-work {
+    width: 100%;
+  }
+
   .work-box::before {
     position: absolute;
     content: '';
@@ -308,21 +327,21 @@
     margin-bottom: -1em;
   }
 
-  .work-box:hover .work-title,
-  .work-box:hover .work-description,
-  .work-box:hover .see-work,
-  .work-box:hover .work-language {
+  :not([class="w-disable"]) .work-title,
+  :not([class="w-disable"]) .work-description,
+  :not([class="w-disable"]) .see-work,
+  :not([class="w-disable"]) .work-language {
     z-index: 2;
   }
 
-  .work-box:hover .work-title,
-  .work-box:hover .work-description,
-  .work-box:hover .work-languages-list {
+  :not([class="w-disable"]) .work-title,
+  :not([class="w-disable"]) .work-description,
+  :not([class="w-disable"]) .work-languages-list {
     color: var(--color-white);
     margin: 0 1em;
   }
 
-  .work-box:hover .work-language {
+  .w-disable .work-language {
     background-color: rgb(148, 147, 147);
   }
 
