@@ -481,15 +481,15 @@
   font-size: 1.1rem;
 }
 
-footer ul{
- justify-content: center;
+footer ul {
+  justify-content: center;
 }
- 
-.socials .separator-line{
+
+.socials .separator-line {
   background-color: var(--color-black-2);
-  width: calc(50% - 134px/2 - 0.5px);
+  width: calc(50% - 134px / 2 - 0.5px);
   height: 5px;
-  margin: 1em auto
+  margin: 1em auto;
 }
 
 /* ========= Minimum desktop screen size ========= */
