@@ -431,12 +431,7 @@
 /* Form Section */
 
 .contact-section {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  background: white;
-  padding: 0 24px;
-  flex-direction: column;
+  padding: 0 1em;
 }
 
 .contact-section h2 {
@@ -450,21 +445,18 @@
 }
 
 .contact-form {
-  margin-bottom: 10vh;
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid var(--color-whitesmoke);
   display: flex;
   flex-direction: column;
 }
 
 .contact-form input {
   width: 100%;
-  border-bottom: 0.5px solid lightgray;
+  border-bottom: 0.5px solid var(--color-whitesmoke);
   padding: 5vh 0 2vh 2vh;
   margin-bottom: 2vh;
-}
-
-#error-message {
-  color: red;
-  display: block;
 }
 
 .contact-form textarea {
@@ -476,18 +468,34 @@
 }
 
 .submit-btn {
-  padding: 1em;
+  padding: 1em 0.5em;
   margin: 1em auto;
   font-size: 1.1rem;
+  font-weight: 700;
 }
 
+/* ========= FOOTER ========= */
 footer ul {
   justify-content: center;
+  margin: 1em 0;
+}
+
+footer li {
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+footer.socials li:active,
+footer.socials li:focus,
+footer.socials li:hover {
+  transform: translateY(-0.2em);
+  opacity: 1;
+  filter: sepia(0%);
 }
 
 .socials .separator-line {
   background-color: var(--color-black-2);
-  width: calc(50% - 134px / 2 - 0.5px);
+  width: 50%;
   height: 5px;
   margin: 1em auto;
 }
