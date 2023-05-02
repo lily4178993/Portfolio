@@ -207,5 +207,30 @@
             </ul>
         </div>
     </section>
+
+    <!-- contact and form section -->
+      <section class="contact-section" id="contact-section">
+        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+        <form class="contact-form" action="https://formspree.io/f/xwkjrkqw" method="post" id="form-element" onsubmit="return validateForm()">
+            <label for="full-name">
+                <input id="full-name" type="text"  name="name" placeholder="Full name" maxlength="30" required/>
+            </label>
+            <label for="email">
+                <input id="email" type="email" name="email" placeholder="Email address"  required/>
+            </label>
+            <textarea id="msg" name="user_message" maxlength="500" placeholder="Write me something..." required></textarea>
+            <button id="submit" type="submit" class="submit-btn btn"> Get-in-touch</button>
+        </form>
+        <footer class="socials">
+            <ul>
+                <li><a href="https://github.com/lily4178993/"><img src="images/github.png" alt="github icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/nelly-t-330414266/"><img src="images/Linkedin icon.png" alt="Linkedin icon"></a></li>
+                <li><a href="#"><img src="images/angel-list.png" alt="angel-list icon"></a></li>
+                <li><a href="https://twitter.com/nelly_telli"><img src="images/twitter.png" alt="twitter icon"></a></li>
+                <li><a href="#"><img src="images/medium.png" alt="medium icon"></a></li>
+            </ul>
+            <div class="separator-line"></div>
+        </footer>
+      </section>
 </body>
 </html>

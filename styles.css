@@ -9,12 +9,12 @@
 }
 
 /* ========= Minimum mobile screen size ========= */
-@media screen and (min-width: 375px) {
+@media screen and (width >= 375px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
   }
 
   html {
@@ -32,8 +32,10 @@
   }
 
   button,
-  input {
+  input,
+  textarea {
     border: 1px solid transparent;
+    outline: var(--color-whitesmoke);
   }
 
   .btn {
@@ -161,7 +163,7 @@
   .headline {
     height: 100vh;
     padding: 10em 1em;
-    background: var(--color-black-1) url(images/Illustration-header-2.png) 100% 110% no-repeat;
+    background: var(--color-black-1) url("images/Illustration-header-2.png") 100% 110% no-repeat;
   }
 
   .headline-content {
@@ -315,7 +317,7 @@
   }
 
   .w-disable {
-    background: rgba(71, 71, 71, 0.211) url(images/pro-img-2.png) center/cover no-repeat;
+    background: rgb(71 71 71 / 21.1%) url("images/pro-img-2.png") center/cover no-repeat;
   }
 
   .w-disable .work-content {
@@ -332,7 +334,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    background: rgba(71, 71, 71, 0.211) url(images/pro-img-2.png) center/cover no-repeat;
+    background: rgb(71 71 71 / 21.1%) url("images/pro-img-2.png") center/cover no-repeat;
     top: 0;
     left: 0;
     opacity: 0;
@@ -341,7 +343,7 @@
   }
 
   .work-box:nth-of-type(1)::before {
-    background: rgba(71, 71, 71, 0.883) url(images/pro-img.png) center/cover no-repeat;
+    background: rgb(71 71 71 / 88.3%) url("images/pro-img.png") center/cover no-repeat;
     filter: contrast(10%);
   }
 
@@ -350,7 +352,7 @@
   }
 
   .w-disable .work-language {
-    background-color: rgb(148, 147, 147);
+    background-color: rgb(148 147 147);
   }
 
   .work-box:hover .see-work {
@@ -374,7 +376,7 @@
     padding-top: 3em;
     padding-bottom: 1em;
     color: var(--color-white);
-    background: var(--color-black-1) url(images/illustration-about-me-mobile.png) 100% 30% no-repeat;
+    background: var(--color-black-1) url("images/illustration-about-me-mobile.png") 100% 30% no-repeat;
   }
 
   .about-section .separator-line {
@@ -426,8 +428,80 @@
   }
 }
 
+/* Form Section */
+
+.contact-section {
+  padding: 0 1em;
+}
+
+.contact-section h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: #172b4d;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 15vh;
+  margin-bottom: 10vh;
+}
+
+.contact-form {
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid var(--color-whitesmoke);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input {
+  width: 100%;
+  border-bottom: 0.5px solid var(--color-whitesmoke);
+  padding: 5vh 0 2vh 2vh;
+  margin-bottom: 2vh;
+}
+
+.contact-form textarea {
+  width: 98%;
+  height: 20vh;
+  background: #fbf8f7;
+  margin: 2vh 0;
+  padding: 2vh 2vh 0;
+}
+
+.submit-btn {
+  padding: 1em 0.5em;
+  margin: 1em auto;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* ========= FOOTER ========= */
+footer ul {
+  justify-content: center;
+  margin: 1em 0;
+}
+
+footer li {
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+footer.socials li:active,
+footer.socials li:focus,
+footer.socials li:hover {
+  transform: translateY(-0.2em);
+  opacity: 1;
+  filter: sepia(0%);
+}
+
+.socials .separator-line {
+  background-color: var(--color-black-2);
+  width: 50%;
+  height: 5px;
+  margin: 1em auto;
+}
+
 /* ========= Minimum desktop screen size ========= */
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
   .menu-box {
     display: none;
   }
