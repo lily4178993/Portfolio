@@ -546,20 +546,20 @@ footer.socials li:hover {
   }
 
   .about-section-title {
-      font-size: 4rem;
-      letter-spacing: normal;
-      text-align: left;
+    font-size: 4rem;
+    letter-spacing: normal;
+    text-align: left;
   }
 
   .skills-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .skills-list {
-      text-align: left;
-      margin: 1.5em 1.5em 1.5em 0;
+    text-align: left;
+    margin: 1.5em 1.5em 1.5em 0;
   }
 
   /* ======== FORM SECTION ========= */
