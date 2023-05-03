@@ -520,6 +520,11 @@ footer.socials li:hover {
     margin: 0 auto;
   }
 
+  .btn {
+    padding: 0.5em 0.2em;
+    font-size: 1rem;
+  }
+
   .hidden {
     display: none;
   }
@@ -528,6 +533,36 @@ footer.socials li:hover {
     display: none;
   }
 
+  /* ======== ABOUT SECTION ========= */
+  .about-section {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    background: var(--color-black-1) url("images/illustration-about\ me.png") 100% 10% no-repeat;
+  }
+
+  .about-section-content {
+    width: 36%;
+    height: 50vh;
+  }
+
+  .about-section-title {
+      font-size: 4rem;
+      letter-spacing: normal;
+      text-align: left;
+  }
+
+  .skills-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+
+  .skills-list {
+      text-align: left;
+      margin: 1.5em 1.5em 1.5em 0;
+  }
+
+  /* ======== FORM SECTION ========= */
   .contact-section {
     padding: 6em 2em 0;
     display: grid;
@@ -570,9 +605,7 @@ footer.socials li:hover {
   }
 
   .submit-btn {
-    padding: 0.5em 0.2em;
     margin: 0;
-    font-size: 1rem;
   }
 
   .socials {
