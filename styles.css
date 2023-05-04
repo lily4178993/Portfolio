@@ -565,7 +565,7 @@ footer.socials li:hover {
 
   .work-box:nth-of-type(1) {
     grid-column: 1 / 4;
-    margin: 0 0 1em 0;
+    margin: 0 0 1em;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -601,12 +601,16 @@ footer.socials li:hover {
 
   .work-box:nth-of-type(2) {
     border: 2px solid var(--color-black-1);
-    background: url(images/pro-img-3.png) center/cover no-repeat;
+    background: url("images/pro-img-3.png") center/cover no-repeat;
   }
 
   .work-box:nth-of-type(2) .work-title,
   .work-box:nth-of-type(2) .work-description,
   .work-box:nth-of-type(2) .work-languages-list{
+    display: none;
+  }
+
+  .w-disable .see-work {
     display: none;
   }
 
@@ -631,10 +635,6 @@ footer.socials li:hover {
   }
 
   .w-disable:hover::before {
-    display: none;
-  }
-
-  .w-disable .see-work {
     display: none;
   }
 
