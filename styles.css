@@ -388,8 +388,8 @@
   }
 
   .about-section-content {
-    max-width: 46%;
-    height: 80vh;
+    max-width: 73%;
+    height: 53vh;
   }
 
   .about-section-title {
@@ -399,7 +399,7 @@
     font-family: 'Crete Round', serif;
     font-weight: 500;
     color: var(--color-orange);
-    text-align: center;
+    text-align: left;
   }
 
   .about-description {
