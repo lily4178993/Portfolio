@@ -394,7 +394,7 @@
 
   .about-section-title {
     font-size: 5rem;
-    line-height: 2em;
+    line-height: normal;
     letter-spacing: 5px;
     font-family: 'Crete Round', serif;
     font-weight: 500;
