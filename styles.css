@@ -745,7 +745,7 @@ footer.socials li:hover {
   }
 
   .section-works .separator-line {
-      width: 70%;
+    width: 70%;
   }
 
   .works-container {
@@ -763,7 +763,7 @@ footer.socials li:hover {
   .work-box:nth-of-type(1) .work-title {
     font-size: 2rem;
   }
-  
+
   .work-box:nth-of-type(1) {
     grid-column-end: 4;
     margin-bottom: 3em;
