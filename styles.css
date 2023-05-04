@@ -393,13 +393,12 @@
   }
 
   .about-section-title {
-    font-size: 3.3rem;
+    font-size: 3.2rem;
     line-height: normal;
     letter-spacing: 5px;
     font-family: 'Crete Round', serif;
     font-weight: 500;
     color: var(--color-orange);
-    text-align: left;
   }
 
   .about-description {
