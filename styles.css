@@ -552,29 +552,29 @@ footer.socials li:hover {
   }
 
   .headline {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  align-items: center;
-  background: var(--color-black-1) url("images/Illustration-header.png") 120% 110% no-repeat;
-  background-size: 410px;
-}
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--color-black-1) url("images/Illustration-header.png") 120% 110% no-repeat;
+    background-size: 410px;
+  }
 
-.headline-content {
-  width: 50vw;
-  margin-left: 4em;
-  gap: 1em;
-}
+  .headline-content {
+    width: 50vw;
+    margin-left: 4em;
+    gap: 1em;
+  }
 
-.headline .socials {
-  align-items: center;
-}
+  .headline .socials {
+    align-items: center;
+  }
 
-.headline .socials ul {
-  display: flex;
-  gap: 1em;
-  flex-direction: column;
-}
+  .headline .socials ul {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+  }
 
   /* ======== RECENT WORKS SECTION ========= */
   .section-works {
@@ -765,7 +765,7 @@ footer.socials li:hover {
     opacity: 0.2;
     position: absolute;
     bottom: 4em;
-    left: 0; 
+    left: 0;
   }
 
   /* Footer */
