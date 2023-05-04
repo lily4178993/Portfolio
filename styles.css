@@ -530,11 +530,27 @@ footer.socials li:hover {
     display: none;
   }
 
-  .menu-box {
-    display: none;
+  /* Header */
+  .header {
+    justify-content: space-around;
   }
 
-  /* Header */
+  .menu {
+    background: none;
+    box-shadow: none;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 1em;
+  }
+
+  .menu-item {
+    font-size: 1rem;
+    color: var(--color-white);
+    border: none;
+  }
+
   .headline {
   display: flex;
   flex-direction: row-reverse;
