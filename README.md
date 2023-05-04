@@ -16,8 +16,12 @@
   - [Screenshot](#screenshot)
   - [Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
+    - [Key Features](#future-features)
   - [Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Deployment](#deployment)
 - [Author](#author)
 - [Future Features](#future-features)
 - [Contributing](#contributing)
@@ -69,10 +73,47 @@ This portfolio is build with:
 You can see the live demonstration of this portfolio [here](https://lily4178993.github.io/Portfolio/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <br/><br/><br/><br/>
+
+<!-- GETTING STARTED -->
+
+## <b>Getting Started 💻</b><a name="getting-started"></a>
+
+Before proceeding to the installation phase, you must ensure that you meet the following prerequisites...
+
+### <b>Prerequisites</b>
+
+- have a [Github account](https://github.com/)
+- install the latest Long-term support version of [Node js](https://nodejs.org/en)
+- install [Visual Studio Code](https://code.visualstudio.com/) and it extension _Live server_
+
+### <b>Setup</b>
+
+In order to run this project you need to:
+
+- open your code editor
+- create a folder with the name **_my-folder_**
+- copy and paste the following code in your editor's terminal:
+```sh
+    cd my-folder
+    git clone https://github.com/lily4178993/Portfolio.git
+```
+- right-click on the _index.html_ file and select _Open with Live Server_
+
+### <b>Deployment</b>
+
+there are many ways to host your project for free:
+
+- [GitHub Pages](https://pages.github.com/)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- AUTHORS -->
 
-## <b>Author 👤</b><a name="authors"></a>
+## <b>Author 👤</b><a name="author"></a>
 <hr /><br/>
 
 Want to get in touch with me? Here are my social links:
@@ -88,11 +129,8 @@ Want to get in touch with me? Here are my social links:
 <hr /><br/>
 In the near future, I plan to add:
 
-- [ ] **the complete mobile version**
-- [ ] **a contact form** 
-- [ ] **a complete desktop version** 
-- [ ] **a contact form**
-I also plan to **deploy the portfolio** 
+- [ ] **more projects**
+- [ ] I also plan to **deploy the portfolio** 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,8 +150,7 @@ Feel free to check the [issues page](https://github.com/lily4178993/Portfolio/is
 <hr /><br/>
 
 Do you like this project? 
-Don't hesitate to vote! Kindly leave a comment below and share it with someone who enjoys coding!
-This will help me gain visibility, but more importantly, it will facilitate access to other people.
+Don't hesitate to vote!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br/><br/>
