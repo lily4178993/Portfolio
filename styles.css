@@ -638,6 +638,10 @@ footer.socials li:hover {
     object-fit: cover;
   }
 
+  .w-disable .work-content {
+    height: 334px;
+  }
+
   .work-box:nth-of-type(1) .work-content {
     margin-left: 1em;
     padding-top: 0;
@@ -648,6 +652,10 @@ footer.socials li:hover {
     font-size: 0.9rem;
   }
 
+  .w-disable .work-title {
+    font-size: 1.2rem;
+  }
+
   .work-box:nth-of-type(1) .work-title {
     font-size: 1.5rem;
   }
@@ -655,6 +663,10 @@ footer.socials li:hover {
   .work-box:nth-of-type(2) {
     border: 2px solid var(--color-black-1);
     background: url("images/pro-img-3.png") center/cover no-repeat;
+  }
+
+  .w-disable .work-description {
+    font-size: 1rem;
   }
 
   .work-box:nth-of-type(2) .work-title,
@@ -691,19 +703,7 @@ footer.socials li:hover {
     width: 233.66px;
   }
 
-  .w-disable .work-content {
-    height: 334px;
-  }
-
-  .w-disable .work-title {
-    font-size: 1.2rem;
-  }
-
-  .w-disable .work-description {
-    font-size: 1rem;
-  }
-
-  .w-disable .work-language  {
+  .w-disable .work-language {
     font-size: 0.8rem;
   }
 
@@ -804,7 +804,7 @@ footer.socials li:hover {
   .w-disable {
     width: 280.66px;
   }
-  
+
   .about-section {
     background: var(--color-black-1) url("images/illustration-about\ me.png") 100% 25% no-repeat;
   }
@@ -812,4 +812,5 @@ footer.socials li:hover {
   .about-section-content {
     height: 60vh;
   }
+
 }
