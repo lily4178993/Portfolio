@@ -638,6 +638,19 @@ footer.socials li:hover {
     object-fit: cover;
   }
 
+  .w-disable {
+    position: relative;
+  }
+
+  .w-disable:hover {
+    border: 2px solid var(--color-black-1);
+    background: url("images/pro-img-3.png") center/cover no-repeat;
+  }
+
+  .w-disable:not(.w-disable:nth-of-type(2))::before {
+    opacity: 1;
+  }
+
   .w-disable .work-content {
     height: 334px;
   }
@@ -660,18 +673,13 @@ footer.socials li:hover {
     font-size: 1.5rem;
   }
 
-  .work-box:nth-of-type(2) {
-    border: 2px solid var(--color-black-1);
-    background: url("images/pro-img-3.png") center/cover no-repeat;
-  }
-
   .w-disable .work-description {
     font-size: 1rem;
   }
 
-  .work-box:nth-of-type(2) .work-title,
-  .work-box:nth-of-type(2) .work-description,
-  .work-box:nth-of-type(2) .work-languages-list {
+  .w-disable:hover .work-title,
+  .w-disable:hover .work-description,
+  .w-disable:hover .work-languages-list {
     display: none;
   }
 
@@ -679,7 +687,7 @@ footer.socials li:hover {
     display: none;
   }
 
-  .work-box:nth-of-type(2) .see-work {
+  .w-disable:hover .see-work {
     display: block;
   }
 
