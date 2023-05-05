@@ -720,7 +720,11 @@ footer.socials li:hover {
 
   .about-section-content {
     max-width: 48%;
-    height: 60vh;
+    height: 62vh;
+  }
+  
+  .about-section .separator-line {
+    margin: 6em auto;
   }
 
   .about-section-title {
