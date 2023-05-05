@@ -68,6 +68,10 @@
     border-color: var(--color-whitesmoke);
   }
 
+  .main {
+    width: 100%;
+  }
+
   /* ======== HEADER ========= */
   .header {
     position: fixed;
@@ -249,8 +253,7 @@
   /* ----- work card box ----- */
   .work-box {
     width: 90vw;
-    min-width: 320px;
-    height: auto;
+    height: max-content;
     border: 1px solid transparent;
     margin: 0 auto;
     margin-bottom: 1em;
@@ -261,7 +264,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 1em;
+    gap: 0;
     padding: 1em 0;
   }
 
@@ -321,7 +324,8 @@
   }
 
   .w-disable .work-content {
-    height: 500px;
+    height: 401px;
+    gap: 1em;
     justify-content: flex-end;
   }
 
@@ -362,7 +366,6 @@
   .work-img-box {
     width: 100%;
     height: 250px;
-    background-color: red;
   }
 
   .work-img-box img {
@@ -376,7 +379,8 @@
     padding-top: 3em;
     padding-bottom: 1em;
     color: var(--color-white);
-    background: var(--color-black-1) url("images/illustration-about-me-mobile.png") 100% 30% no-repeat;
+    background: var(--color-black-1) url("images/illustration-about\ me.png") 170% 27% no-repeat;
+    background-size: 350px;
   }
 
   .about-section .separator-line {
@@ -384,17 +388,16 @@
   }
 
   .about-section-content {
-    height: 80vh;
+    height: 65vh;
   }
 
   .about-section-title {
-    font-size: 5rem;
-    line-height: 2em;
+    font-size: 2.3rem;
     letter-spacing: 5px;
     font-family: 'Crete Round', serif;
-    font-weight: 500;
-    color: var(--color-orange);
+    font-weight: 700;
     text-align: center;
+    color: var(--color-orange);
   }
 
   .about-description {
@@ -403,6 +406,7 @@
   }
 
   .btn-resume {
+    width: max-content;
     margin-top: 1em;
   }
 
@@ -444,6 +448,10 @@
   margin-bottom: 10vh;
 }
 
+.display-block {
+  display: none;
+}
+
 .contact-form {
   margin-bottom: 2em;
   padding-bottom: 1.5em;
@@ -460,8 +468,8 @@
 }
 
 .contact-form textarea {
-  width: 98%;
-  height: 20vh;
+  width: 100%;
+  height: 10em;
   background: #fbf8f7;
   margin: 2vh 0;
   padding: 2vh 2vh 0;
@@ -502,7 +510,315 @@ footer.socials li:hover {
 
 /* ========= Minimum desktop screen size ========= */
 @media screen and (width >= 768px) {
-  .menu-box {
+  ::placeholder {
+    font-size: 0.785rem;
+    opacity: 0.5;
+  }
+
+  .btn {
+    padding: 0.5em 0.2em;
+    font-size: 1rem;
+  }
+
+  .hidden {
     display: none;
+  }
+
+  .header,
+  .main {
+    width: 100%;
+    max-width: 1312px;
+  }
+
+  /* Header */
+  .header {
+    left: 0;
+    justify-content: space-around;
+  }
+
+  .menu {
+    background: none;
+    box-shadow: none;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 1em;
+  }
+
+  .menu-item {
+    font-size: 1rem;
+    color: var(--color-white);
+    border: none;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--color-black-1) url("images/Illustration-header.png") 120% 110% no-repeat;
+    background-size: 410px;
+  }
+
+  .headline-content {
+    width: 50vw;
+    margin-left: 4em;
+    gap: 1em;
+  }
+
+  .headline .socials {
+    align-items: center;
+  }
+
+  .headline .socials ul {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  /* ======== RECENT WORKS SECTION ========= */
+  .section-works {
+    padding: 7em 2em;
+  }
+
+  .section-works-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6em;
+  }
+
+  .section-works-title h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+
+  .section-works .separator-line {
+    width: 60%;
+    margin: 0;
+  }
+
+  .works-container {
+    width: 100%;
+    grid-template-columns: 30.33% 30.33% 30.33%;
+    grid-template-rows: auto auto auto;
+    justify-content: space-between;
+    gap: 0.5em;
+  }
+
+  /* ----- work card box ----- */
+  .work-box {
+    width: 100%;
+    min-width: 150px;
+  }
+
+  .work-box:nth-of-type(1) {
+    width: 100%;
+    max-width: 1096px;
+    height: 37vh;
+    grid-column: 1 / 4;
+    margin: 0 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .work-box:nth-of-type(1)::before {
+    display: none;
+  }
+
+  .work-box:nth-of-type(1) .work-img-box {
+    height: 47vh;
+  }
+
+  .work-box:nth-of-type(1) .work-img-box img {
+    width: 22em;
+    height: 76%;
+    object-fit: cover;
+  }
+
+  .w-disable {
+    width: 233.66px;
+    position: relative;
+  }
+
+  .w-disable:hover {
+    border: 2px solid var(--color-black-1);
+    background: url("images/pro-img-3.png") center/cover no-repeat;
+  }
+
+  .w-disable:hover::before {
+    display: none;
+  }
+
+  .w-disable:not(.w-disable:nth-of-type(2))::before {
+    opacity: 1;
+  }
+
+  .w-disable .work-content {
+    height: 334px;
+  }
+
+  .work-box:nth-of-type(1) .work-content {
+    margin-left: 1em;
+    padding-top: 0;
+  }
+
+  .work-box:nth-of-type(1) .work-content * {
+    margin: 0 0 0.178em;
+    font-size: 0.9rem;
+  }
+
+  .w-disable .work-title {
+    font-size: 1.2rem;
+  }
+
+  .work-box:nth-of-type(1) .work-title {
+    font-size: 1.5rem;
+  }
+
+  .w-disable .work-description {
+    font-size: 1rem;
+  }
+
+  .w-disable:hover .work-title,
+  .w-disable:hover .work-description,
+  .w-disable:hover .work-languages-list {
+    display: none;
+  }
+
+  .w-disable .see-work {
+    display: none;
+  }
+
+  .w-disable:hover .see-work {
+    display: block;
+  }
+
+  .work-box:nth-of-type(3) {
+    background: url("images/Data\ Dashboard\ Healthcare.png") center/cover no-repeat;
+  }
+
+  .work-box:nth-of-type(4) {
+    background: url("images/Website\ Portfolio.png") center/cover no-repeat;
+  }
+
+  .work-box:nth-of-type(6) {
+    background: url("images/Data\ Dashboard\ Healthcare.png") center/cover no-repeat;
+  }
+
+  .work-box:nth-of-type(7) {
+    background: url("images/Website\ Portfolio.png") center/cover no-repeat;
+  }
+
+  .w-disable .work-language {
+    font-size: 0.8rem;
+  }
+
+  /* ======== ABOUT SECTION ========= */
+  .about-section {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    background: var(--color-black-1) url("images/illustration-about\ me.png") 192% 25% no-repeat;
+  }
+
+  .about-section-content {
+    max-width: 48%;
+    height: 62vh;
+  }
+
+  .about-section .separator-line {
+    margin: 6em auto;
+  }
+
+  .about-section-title {
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .skills-list {
+    text-align: left;
+    margin: 1.5em 1.5em 1.5em 0;
+  }
+
+  /* ======== FORM SECTION ========= */
+  .contact-section {
+    padding: 6em 2em 0;
+    display: grid;
+    grid-template-columns: 40vw 1fr;
+    grid-template-rows: 1fr auto;
+    justify-items: stretch;
+    align-items: baseline;
+    position: relative;
+  }
+
+  .contact-section h2 {
+    width: 316px;
+    max-width: 560px;
+    text-align: left;
+    font-size: 1.8em;
+    padding-top: 0;
+    margin-right: 3.9em;
+  }
+
+  .display-block {
+    display: flex;
+    gap: 1em;
+  }
+
+  .contact-form {
+    width: 50vw;
+    max-width: 580px;
+    margin-bottom: 2em;
+    padding-bottom: 3em;
+    border-bottom: none;
+  }
+
+  .contact-form label {
+    width: 100%;
+  }
+
+  .contact-form input {
+    padding: 1em;
+    margin-bottom: 0;
+  }
+
+  .submit-btn {
+    margin: 0;
+  }
+
+  .contact-section .socials .separator-line {
+    width: 100%;
+    height: 1px;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 4em;
+    left: 0;
+  }
+
+  /* Footer */
+  .contact-section .socials {
+    grid-column: 1 / 3;
+  }
+}
+
+@media screen and (width >= 918px) {
+  .w-disable {
+    width: 280.66px;
+  }
+
+  .about-section {
+    background: var(--color-black-1) url("images/illustration-about\ me.png") 100% 25% no-repeat;
+  }
+
+  .about-section-content {
+    height: 60vh;
   }
 }
