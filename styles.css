@@ -639,12 +639,17 @@ footer.socials li:hover {
   }
 
   .w-disable {
+    width: 233.66px;
     position: relative;
   }
 
   .w-disable:hover {
     border: 2px solid var(--color-black-1);
     background: url("images/pro-img-3.png") center/cover no-repeat;
+  }
+
+  .w-disable:hover::before {
+    display: none;
   }
 
   .w-disable:not(.w-disable:nth-of-type(2))::before {
@@ -707,16 +712,8 @@ footer.socials li:hover {
     background: url("images/Website\ Portfolio.png") center/cover no-repeat;
   }
 
-  .w-disable {
-    width: 233.66px;
-  }
-
   .w-disable .work-language {
     font-size: 0.8rem;
-  }
-
-  .w-disable:hover::before {
-    display: none;
   }
 
   /* ======== ABOUT SECTION ========= */
