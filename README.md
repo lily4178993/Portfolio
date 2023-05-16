@@ -159,6 +159,8 @@ Don't hesitate to vote!
 ## <b>Acknowledgments 🙏 </b><a name="acknowledgements"></a>
 <hr /><br/>
 
+I would like to thank [kit0-0](https://github.com/kit0-0) for her help in developing the components of this portfolio.
+
 I am grateful to [Microverse](https://github.com/microverseinc) for the opportunity they have given me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
