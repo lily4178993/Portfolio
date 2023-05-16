@@ -116,8 +116,8 @@
     width: 2em;
     height: 0.3em;
     appearance: none;
-    background-color: var(--color-white);
-    box-shadow: 0 -8px 0 0 var(--color-white), 0 8px 0 0 var(--color-white);
+    /* background-color: var(--color-white);
+    box-shadow: 0 -8px 0 0 var(--color-white), 0 8px 0 0 var(--color-white); */
     cursor: pointer;
   }
 
@@ -536,10 +536,10 @@ footer.socials li:hover {
     justify-content: space-around;
   }
 
-  .menu {
+  /* .menu {
     background: none;
     box-shadow: none;
-  }
+  } */
 
   .menu-list {
     display: flex;
