@@ -1,10 +1,11 @@
-//This is for JS
-let menu = document.getElementsByClassName("menu")[0]; // Access the first element from the collection
+const menuIcon = document.getElementById('menu');
 
-if (window.innerWidth >= 768) {
-    menu.style.background = "none";
-    menu.style.boxShadow = "none";
-} else {
-    menu.style.backgroundColor = "var(--color-white)";
-    menu.style.boxShadow = "0 -8px 0 0 var(--color-white), 0 8px 0 0 var(--color-white)";
-}
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768) {
+    menuIcon.style.background = 'none';
+    menuIcon.style.boxShadow = 'none';
+  } else {
+    menuIcon.style.background = 'var(--color-white)';
+    menuIcon.style.boxShadow = '0 -8px 0 0 var(--color-white), 0 8px 0 0 var(--color-white)';
+  }
+});
