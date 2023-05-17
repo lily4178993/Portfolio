@@ -64,3 +64,20 @@ let collectionOfProjects = [
         link_to_source_code: `https://github.com/lily4178993/Portfolio`
     }
 ];
+let worksContainer = document.querySelector('works-container');
+collectionOfProjects.map((card) => {
+    worksContainer.innerHTML += `
+    <div class="work-box w-disable">
+    <div class="work-content">
+    <h3 class="work-title">${card.name}</h3>
+    <p class="work-description">${card.description}</p>
+    <ul class="work-languages-list">
+    <li class="work-language">${card.technologies[0]}</li>
+    <li class="work-language">${card.technologies[1]}</li>
+    <li class="work-language">${card.technologies[2]}</li>
+    </ul>
+    <a href="#" class="btn see-work">See project</a>
+    </div>
+    </div>
+    `
+})
