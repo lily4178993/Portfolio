@@ -57,15 +57,10 @@ let collectionOfProjects = [
     },
     {
         name: `Website Portfolio`,
-        description: `A daily selection of privately personalized reads; no accounts
-        or sign-ups required. has been the industry's standard.`,
+        description: `A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.`,
         featured_Image: ``,
         technologies: ["HTML", "Bootstrap", "Ruby"],
         link_to_live_version: `lily4178993.github.io/Portfolio/`,
         link_to_source_code: `https://github.com/lily4178993/Portfolio`
     }
 ];
-
-collectionOfProjects.forEach(project => {
-    console.log("Informations of each project: ", project);
-});
