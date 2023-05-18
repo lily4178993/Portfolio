@@ -313,6 +313,10 @@
     margin: 0 1em;
   }
 
+  .modal-header .work-languages-list {
+    margin: 1em 0;
+  }
+
   .work-box:nth-of-type(1) .work-title,
   .work-box:nth-of-type(1) .work-description,
   .work-box:nth-of-type(1) .work-languages-list {
@@ -372,6 +376,150 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  /* ======== MODAL POPUP WINDOW =========
+
+  * The following lines of code were taken from the W3School website.
+  * You can see the source by following this link:
+  * https://www.w3schools.com/howto/howto_css_modals.asp
+
+  * I modified them according to my project
+  */
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2% 0;
+    overflow: auto;
+    backdrop-filter: blur(0.1em);
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: var(--color-white);
+    margin: auto;
+    padding: 0.7em;
+    border: 1px solid #888;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  /* The Close Button */
+  .close {
+    color: var(--color-black-2);
+    float: right;
+    font-size: 28px;
+    opacity: 0.5;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: var(--color-darkorange);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal Header */
+  .modal-header {
+    margin-bottom: 1.5em;
+  }
+
+  .modal-header h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .modal-header .work-language {
+    background: transparent;
+    color: black;
+    font-size: 0.8rem;
+    padding: 0.5em 1em;
+  }
+
+  /* Modal Body */
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .modal-description {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 100%;
+  }
+
+  .modal-description p {
+    opacity: 0.6;
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em;
+    margin: 0.9em 0;
+  }
+
+  .modal-buttons .btn {
+    width: 140px;
+    padding-left: 1em;
+    text-align: left;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .modal-buttons .btn::after {
+    position: absolute;
+    width: 30%;
+    height: 105%;
+    right: -14%;
+    top: -2%;
+    background: var(--color-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-buttons .btn:nth-of-type(1)::after {
+    content: url('./images/Icon-see\ live.png');
+  }
+
+  .modal-buttons .btn:nth-of-type(2)::after {
+    content: url('./images/Vector.png');
+  }
+
+  /* Add Animation */
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+
+    to {
+      top: 0;
+      opacity: 1;
+    }
   }
 
   /* ======== ABOUT SECTION ========= */
@@ -714,6 +862,26 @@ footer.socials li:hover {
 
   .w-disable .work-language {
     font-size: 0.8rem;
+  }
+
+  /* Modal Body */
+  .modal-body {
+    flex-direction: row;
+    gap: 0.5em;
+  }
+
+  .modal-image {
+    width: 55%;
+    height: auto;
+  }
+
+  .modal-description {
+    padding: 0 0.5em;
+    width: 50%;
+  }
+
+  .modal-buttons .btn {
+    line-height: normal;
   }
 
   /* ======== ABOUT SECTION ========= */
