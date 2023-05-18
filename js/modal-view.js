@@ -4,7 +4,7 @@ let collectionOfProjects = [
         description: `A daily selection of privately personalized reads; no accounts
         or sign-ups required. has been the industry's standard.`,
         featured_Image: `./images/pro-img.png`,
-        technologies: ["HTML", "Bootstrap", "Ruby"],
+        technologies: ["HTML", "Bootstrap", "Ruby", "Test"],
         link_to_live_version: `lily4178993.github.io/Portfolio/`,
         link_to_source_code: `https://github.com/lily4178993/Portfolio`
     },
@@ -68,7 +68,7 @@ collectionOfProjects.map((project) => {
                 <li class="work-language">${project.technologies[2]}</li>
             </ul>
             <!-- Trigger/Open The Modal -->
-            <a href="#" class="btn see-work" id="openModal">See project</a>
+            <a href="#portfolio" class="btn see-work openModal">See project</a>
         </div>
     </div>
     <!-- WORK BOX (end) -->
@@ -86,11 +86,27 @@ collectionOfProjects.map((project) => {
                 </ul>
             </div>
             <div class="modal-body">
-                <img src="${project.featured_Image}" alt="">
-                <div>
-                    <p>${project.description}</p>
-                    <a href="${project.link_to_live_version}" class="btn">See live</a>
-                    <a href="${project.link_to_source_code}" class="btn">See Source</a>
+                <div class="modal-image">
+                    <img src="./images/Snapshoot Portfolio.png" alt="Project Snapshoot">
+                </div>
+                <div class="modal-description">
+                    <div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it 1960s.
+                        </p><br>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it 1960s with the 
+                            releax map lapora verita.
+                        </p>
+                    </div>
+                    <div class="modal-buttons">
+                        <a href="${project.link_to_live_version}" class="btn">See live</a>
+                        <a href="${project.link_to_source_code}" class="btn">See Source</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,14 +125,16 @@ collectionOfProjects.map((project) => {
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("openModal");
+var btn = document.getElementsByClassName("openModal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+for (let i = 0; i < btn.length; i++) {
+    btn[i].onclick = function() {
+        modal.style.display = "block";
+    }
 }
 
 // When the user clicks on <span> (x), close the modal
