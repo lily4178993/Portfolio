@@ -313,6 +313,10 @@
     margin: 0 1em;
   }
 
+  .modal-header .work-languages-list {
+    margin: 1em 0;
+  }
+
   .work-box:nth-of-type(1) .work-title,
   .work-box:nth-of-type(1) .work-description,
   .work-box:nth-of-type(1) .work-languages-list {
@@ -404,7 +408,7 @@
     padding: 0.7em;
     border: 1px solid #888;
     width: 90%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),0 6px 20px 0 rgb(0 0 0 / 19%);
     animation-name: animatetop;
     animation-duration: 0.4s
   }
@@ -432,10 +436,6 @@
   .modal-header h4 {
     font-size: 1.5rem;
     font-weight: 500;
-  }
-
-  .modal-header .work-languages-list {
-    margin: 1em 0;
   }
 
   .modal-header .work-language {
@@ -511,8 +511,15 @@
 
   /* Add Animation */
   @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
+    from {
+      top: -300px; 
+      opacity: 0
+    }
+    
+    to {
+      top: 0; 
+      opacity: 1
+    }
   }
 
   /* ======== ABOUT SECTION ========= */
