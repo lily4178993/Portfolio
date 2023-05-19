@@ -94,6 +94,10 @@
   }
 
   /* ----- naviguation menu ----- */
+  .label-menu {
+    color: transparent;
+  }
+
   .menu-box {
     background-color: var(--color-black-2);
   }
