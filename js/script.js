@@ -1,4 +1,4 @@
-var menuIcon = document.getElementById('menu');
+const menuIcon = document.getElementById('menu');
 
 window.addEventListener('resize', () => {
   if (window.innerWidth < 768) {

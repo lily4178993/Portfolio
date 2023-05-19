@@ -94,6 +94,10 @@
   }
 
   /* ----- naviguation menu ----- */
+  .label-menu {
+    color: transparent;
+  }
+
   .menu-box {
     background-color: var(--color-black-2);
   }
@@ -584,7 +588,7 @@
   }
 }
 
-/* Form Section */
+/* ======== CONTACT SECTION ========= */
 
 .contact-section {
   padding: 0 1em;
@@ -598,10 +602,6 @@
   font-size: 2em;
   padding-top: 15vh;
   margin-bottom: 10vh;
-}
-
-.display-block {
-  display: none;
 }
 
 .contact-form {
@@ -629,9 +629,24 @@
 
 .submit-btn {
   padding: 1em 0.5em;
-  margin: 1em auto;
   font-size: 1.1rem;
   font-weight: 700;
+}
+
+.contact-validation-box {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  flex-direction: column-reverse;
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 0.8rem;
+  color: var(--color-darkorange);
+  border-radius: 5px;
 }
 
 /* ========= FOOTER ========= */
@@ -941,11 +956,6 @@ footer.socials li:hover {
     font-size: 1.8em;
     padding-top: 0;
     margin-right: 3.9em;
-  }
-
-  .display-block {
-    display: flex;
-    gap: 1em;
   }
 
   .contact-form {
