@@ -144,7 +144,10 @@
                     <input id="email" type="email" name="email" placeholder="Email address"  required/>
                 </label>
                 <textarea id="msg" name="user_message" maxlength="500" placeholder="Write me something..." required></textarea>
-                <button id="submit" type="submit" class="submit-btn btn"> Get-in-touch</button>
+                <div class="contact-validation-box">
+                    <button id="submit" type="submit" class="submit-btn btn"> Get-in-touch</button>
+                    <span class="error" aria-live="polite">This is the error</span>
+                </div>
             </form>
             <footer class="socials">
                 <ul>
@@ -161,5 +164,6 @@
   
     <script src="js/modal-view.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/validation-form.js"></script>
 </body>
 </html>
