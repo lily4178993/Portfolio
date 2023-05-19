@@ -604,10 +604,6 @@
   margin-bottom: 10vh;
 }
 
-.display-block {
-  display: none;
-}
-
 .contact-form {
   margin-bottom: 2em;
   padding-bottom: 1.5em;
@@ -960,11 +956,6 @@ footer.socials li:hover {
     font-size: 1.8em;
     padding-top: 0;
     margin-right: 3.9em;
-  }
-
-  .display-block {
-    display: flex;
-    gap: 1em;
   }
 
   .contact-form {
