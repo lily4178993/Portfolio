@@ -129,8 +129,7 @@ Want to get in touch with me? Here are my social links:
 <hr /><br/>
 In the near future, I plan to add:
 
-- [ ] **more projects**
-- [ ] I also plan to **deploy the portfolio** 
+- [ ] **more recents projects**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,11 +145,11 @@ Feel free to check the [issues page](https://github.com/lily4178993/Portfolio/is
 <br/><br/>
 <!-- SUPPORT -->
 
-## <b>Show your support ⭐️ </b><a name="support"></a>
+## <b>Show your support ⭐️⭐️ </b><a name="support"></a>
 <hr /><br/>
 
 Do you like this project? 
-Don't hesitate to vote!
+Don't hesitate to vote ⭐️!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br/><br/>
@@ -159,7 +158,7 @@ Don't hesitate to vote!
 ## <b>Acknowledgments 🙏 </b><a name="acknowledgements"></a>
 <hr /><br/>
 
-I would like to thank [kit0-0](https://github.com/kit0-0) for her help in developing the components of this portfolio.
+I would like to thank [kit0-0](https://github.com/kit0-0) and [Mike111222](https://github.com/Mike111222) for their help in developing the components of this portfolio.
 
 I am grateful to [Microverse](https://github.com/microverseinc) for the opportunity they have given me.
 
@@ -167,7 +166,7 @@ I am grateful to [Microverse](https://github.com/microverseinc) for the opportun
 <br/><br/><br/>
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
+## <b>License 📝</b><a name="license"></a>
 <hr /><br/>
 
 This project is [MIT](./LICENSE) licensed.
