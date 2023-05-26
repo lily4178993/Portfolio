@@ -7,7 +7,7 @@
 const form = document.querySelector('#form');
 
 // Get the email
-const email = document.getElementById('mail');
+const email = document.getElementById('email');
 
 // Get the element that will display the message error
 const emailError = document.getElementById('error');
@@ -19,7 +19,7 @@ const emailError = document.getElementById('error');
  * Iterate through the value and check if there is any capital letter
  * Return an error message if true and send the content of the form if not
 */
-form.addEventListener('sbmit', (event) => {
+form.addEventListener('submit', (event) => {
   const emailValue = email.value;
   const emailchecker = emailValue.replace(/[^a-zA-Z]/g, '').split('');
   for (let counter = 0; counter < emailchecker.length; counter += 1) {
