@@ -70,8 +70,6 @@ This portfolio is build with:
 ## <b>Live Demo 🚀</b> <a name="live-demo"></a>
 <hr />
 
-You can see the live demonstration of this portfolio [here](https://lily4178993.github.io/Portfolio/) or watch this [video](https://www.loom.com/share/7e872e31ca2549db9d0b40fbc8e38d72).
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <br/><br/><br/><br/>
