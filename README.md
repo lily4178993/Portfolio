@@ -36,7 +36,7 @@
 
 ## <b>Portfolio</b> 📖<a name="about-project"></a>
 
-This is a portfolio website is designed to show what I'm really capable of as a web developer.
+It is a Portfolio website built with HTML, CSS, and JavaScript. It shows information about my experience as a web developer, including the recent works.
 <br><hr>
 <!-- SCREENSHOT -->
 
