@@ -18,7 +18,6 @@
   - [Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#future-features)
-  - [Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -83,14 +82,6 @@ errors, and suspicious constructs.</li>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br><hr>
-
-<!-- LIVE DEMO -->
-
-## <b>Live Demo 🚀</b> <a name="live-demo"></a>
-
-This Portfolio website is hosted on [GitHub pages](#deployment), so if you want to check it online, please 😊 [Click here](https://lily4178993.github.io/Portfolio/).
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<hr>
 
 <!-- GET STARTED -->
 
