@@ -118,7 +118,7 @@ textarea {
   .menu {
     position: fixed;
     top: 1.7em;
-    right: 4%;
+    right: 2em;
     width: 2em;
     height: 0.3em;
     appearance: none;
@@ -175,7 +175,7 @@ textarea {
 
   /* ======== HEADLINE SECTION ========= */
   .headline {
-    height: 100vh;
+    height: auto;
     padding: 10em 1em;
     background: var(--color-black-1) url("images/Illustration-header-2.png") 100% 110% no-repeat;
   }
