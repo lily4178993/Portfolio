@@ -8,66 +8,68 @@
   --color-black-2: #3c3a39;
 }
 
+/* ========= RESET PTOPERTIES ========= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+button,
+input,
+textarea {
+  border: 1px solid transparent;
+  outline: var(--color-whitesmoke);
+}
+
+.btn {
+  padding: 0.5em 1em;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border: 1px solid transparent;
+  display: block;
+  width: 40%;
+  text-align: center;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--color-darkorange);
+  background-color: var(--color-lightsalmon);
+  border-color: var(--color-orange);
+}
+
+.btn:active {
+  color: var(--color-lightsalmon);
+  background-color: var(--color-darkorange);
+  border-color: var(--color-darkorange);
+}
+
+.btn:disabled {
+  color: var(--color-black-2);
+  background-color: var(--color-whitesmoke);
+  border-color: var(--color-whitesmoke);
+}
+
 /* ========= Minimum mobile screen size ========= */
-@media screen and (width >= 375px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-  }
-
-  html {
-    scroll-behavior: smooth;
-    font-size: 18px;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  li {
-    list-style-type: none;
-  }
-
-  button,
-  input,
-  textarea {
-    border: 1px solid transparent;
-    outline: var(--color-whitesmoke);
-  }
-
-  .btn {
-    padding: 0.5em 1em;
-    background-color: var(--color-orange);
-    color: var(--color-white);
-    border: 1px solid transparent;
-    display: block;
-    width: 40%;
-    text-align: center;
-    transition: all 500ms ease-in-out;
-    cursor: pointer;
-  }
-
-  .btn:hover {
-    color: var(--color-darkorange);
-    background-color: var(--color-lightsalmon);
-    border-color: var(--color-orange);
-  }
-
-  .btn:active {
-    color: var(--color-lightsalmon);
-    background-color: var(--color-darkorange);
-    border-color: var(--color-darkorange);
-  }
-
-  .btn:disabled {
-    color: var(--color-black-2);
-    background-color: var(--color-whitesmoke);
-    border-color: var(--color-whitesmoke);
-  }
-
+@media screen and (width >= 280px) {
   .main {
     width: 100%;
   }
@@ -116,7 +118,7 @@
   .menu {
     position: fixed;
     top: 1.7em;
-    right: 2em;
+    right: 4%;
     width: 2em;
     height: 0.3em;
     appearance: none;
